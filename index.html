@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="/public/weather.png" type="image/png">
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <div class="box">
+        <form name="weather">
+          <div class="selects">
+            <select class="form-select country" aria-label="Default select example">
+              <option selected>Choose country</option>
+            </select>
+            <select name="region" class="form-select region" aria-label="Default select example">
+              <option selected>Choose region</option>
+            </select>
+          </div>
+          <button>Find Weather</button>
+        </form>
+
+        <div class="main_info">
+          <h1>PLease</h1>
+          <h3 class="countryName">Select</h3>
+          <h2>Country</h2>
+
+          <div class="info">
+            <h3 class="day_night">Day</h3>
+            <h3 class="cond">Sunny</h3>
+            <span class="about">
+              <h3>Condition</h3>
+              <img class="cond_icon" src="/public/weather.png" alt="icon">
+            </span>
+
+            <h3>Time: <span>Time</span></h3>
+
+            <span class="wind">
+              <img src="/public/wind.png" alt="wind">
+              <h3>Wind Speed</h3>
+            </span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
